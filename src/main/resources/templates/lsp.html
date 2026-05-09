@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LSP</title>
+</head>
+<style>
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    nav>a{
+        font-size: 20pt;
+    }
+    .active{
+        font-weight: bolder;
+        color: blue;
+    }
+    p{
+        font-size: 15pt;
+    }
+</style>
+<body>
+    <nav>
+        <a href="/s">S</a>
+        <a href="/o">O</a>
+        <a href="/l" class="active">L</a>
+        <a href="/i">I</a>
+        <a href="/d">D</a>
+    </nav>
+
+    <h1>Liskov substitution principle (LSP)</h1>
+    <p>Las clases derivadas deben poder ser sustituibles por sus clases base sin introducir ningún comportamiento inesperado.</p>
+    <p>
+        Este principio promueve que los contratos de cualquier interfaz se cumplan siempre a
+        cabalidad. La correcta aplicación de este principio brinda seguridad a la persona
+        programadora. Para todas las interfaces implementadas en una clase cualquiera,
+        podemos contar con que sus operaciones siempre se van a comportar según lo
+        especificado, y nunca habrá casos especiales.
+    </p>
+</body>
+</html>

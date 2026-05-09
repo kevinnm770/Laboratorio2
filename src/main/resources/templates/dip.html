@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIP</title>
+</head>
+<style>
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    nav>a{
+        font-size: 20pt;
+    }
+    .active{
+        font-weight: bolder;
+        color: blue;
+    }
+    p{
+        font-size: 15pt;
+    }
+</style>
+<body>
+    <nav>
+        <a href="/s">S</a>
+        <a href="/o">O</a>
+        <a href="/l">L</a>
+        <a href="/i">I</a>
+        <a href="/d" class="active">D</a>
+    </nav>
+
+    <h1>Dependency inversion principle (DIP)</h1>
+    <p>Las abstracciones no deben depender de los detalles; al contrario, los detalles dependen de las abstracciones.</p>
+    <p>
+        Este principio pretende mantener un bajo acoplamiento en el sistema, a través de
+        esconder detalles de implementación. El objetivo es promover que las clases se
+        relacionen con otras clases sólo a través de sus correspondientes interfaces, sin
+        necesidad de conocer cómo están implementados sus contratos.
+    </p>
+</body>
+</html>

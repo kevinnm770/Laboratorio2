@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SRP</title>
+</head>
+<style>
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    nav>a{
+        font-size: 20pt;
+    }
+    .active{
+        font-weight: bolder;
+        color: blue;
+    }
+    p{
+        font-size: 15pt;
+    }
+</style>
+<body>
+    <nav>
+        <a href="/s" class="active">S</a>
+        <a href="/o">O</a>
+        <a href="/l">L</a>
+        <a href="/i">I</a>
+        <a href="/d">D</a>
+    </nav>
+
+    <h1>Single responsibility principle (SRP)</h1>
+    <p>Un módulo debe tener una, y solamente una, razón por la cual debería cambiar.</p>
+    <p>
+        Los sistemas de software cambian cuando las necesidades de las personas que lo
+        requieren cambian. Los módulos deberían estar mapeados a necesidades
+        (requerimientos o grupos de requerimientos) puntuales.
+    </p>
+</body>
+</html>

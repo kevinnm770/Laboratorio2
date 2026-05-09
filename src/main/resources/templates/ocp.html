@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OCP</title>
+</head>
+<style>
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    nav>a{
+        font-size: 20pt;
+    }
+    .active{
+        font-weight: bolder;
+        color: blue;
+    }
+    p{
+        font-size: 15pt;
+    }
+</style>
+<body>
+    <nav>
+        <a href="/s">S</a>
+        <a href="/o" class="active">O</a>
+        <a href="/l">L</a>
+        <a href="/i">I</a>
+        <a href="/d">D</a>
+    </nav>
+
+    <h1>Open/closed principle (OCP)</h1>
+    <p>Un módulo debe estar abierto a la extensión pero cerrado a modificación.</p>
+    <p>
+        Este principio pretende lograr módulos adaptables al cambio. El objetivo es que un
+        módulo puede crecer en funcionalidad sin necesidad de modificar el código que ya
+        existe. Esto se puede lograr estructurando el módulo de manera tal que la
+        funcionalidad extendida se pueda agregar como nuevo código, a través de herencia o
+        delegación.
+    </p>
+</body>
+</html>

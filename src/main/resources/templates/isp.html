@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ISP</title>
+</head>
+<style>
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    nav>a{
+        font-size: 20pt;
+    }
+    .active{
+        font-weight: bolder;
+        color: blue;
+    }
+    p{
+        font-size: 15pt;
+    }
+</style>
+<body>
+    <nav>
+        <a href="/s">S</a>
+        <a href="/o">O</a>
+        <a href="/l">L</a>
+        <a href="/i" class="active">I</a>
+        <a href="/d">D</a>
+    </nav>
+
+    <h1>Interface segregation principle (ISP)</h1>
+    <p>Las interfaces deben ser concisas, no deben ofrecer operaciones que no sean requeridas por todos sus clientes.</p>
+    <p>
+        Este es un principio que promueve una alta cohesión. Si una interfaz provee
+        operaciones que sólo algunos de sus clientes utilizarán podría estar tomando más
+        responsabilidades de las que le corresponden (y esto tiene un impacto negativo en
+        SRP).
+    </p>
+</body>
+</html>
